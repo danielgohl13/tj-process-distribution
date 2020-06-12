@@ -7,7 +7,7 @@ module.exports = app => {
   
     router.get("/", processo.getAll);
   
-    router.get("/published", processo.getAllSorted);
+    router.get("/sorted", processo.getAllSorted);
     
     router.get("/:id", processo.getOne);
   
