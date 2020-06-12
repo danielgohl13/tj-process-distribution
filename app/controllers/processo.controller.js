@@ -1,16 +1,8 @@
 const db = require("../models");
-const Tutorial = db.processos;
+const Processo = db.processos;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
-  
-  if (!req.body.numprocesso) {
-    res.status(400).send({
-      message: "Conteudo não pode estar vázio"
-    });
-    return;
-  }
-
 
   const processo = {
     title: req.body.numprocesso,

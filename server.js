@@ -22,6 +22,9 @@ app.get("/", (req, res) => {
 const db = require("./app/models");
 db.sequelize.sync();
 
+require("./app/routes/processo.routes")(app);
+
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server rodando na porta ${PORT}.`);

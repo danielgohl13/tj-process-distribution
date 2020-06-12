@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Tutorial = sequelize.define("processo", {
+    const Processo = sequelize.define("processo", {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
