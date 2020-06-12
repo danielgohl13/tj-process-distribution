@@ -1,7 +1,9 @@
 module.exports = (sequelize, Sequelize, Endereco) => {
     const Vara = sequelize.define("vara", {
         id: {
-            type: Sequelize.INTEGER
+            type: Sequelize.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
         },
 
         address_id: {

@@ -23,6 +23,7 @@ const db = require("./app/models");
 db.sequelize.sync();
 
 require("./app/routes/processo.routes")(app);
+require("./app/routes/pessoa.routes")(app);
 
 
 const PORT = process.env.PORT || 8080;

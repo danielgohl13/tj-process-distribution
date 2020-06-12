@@ -1,7 +1,9 @@
-module.exports = (sequelize, Sequelize, Pessoa) => {
+module.exports = (sequelize, Sequelize) => {
     const Juiz = sequelize.define("juiz", {
         id: {
-            type: Sequelize.INTEGER
+            type: Sequelize.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
         },
 
         vara_id: {
